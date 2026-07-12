@@ -35,7 +35,13 @@
         margin: 0;
         background: var(--bg);
         color: var(--fg);
-        font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+        font:
+          17px/1.65 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          Helvetica,
+          Arial,
           sans-serif;
         -webkit-text-size-adjust: 100%;
       }
@@ -92,8 +98,8 @@
       <header>
         <h1>Privacy Policy</h1>
         <p class="meta">
-          <strong>Effective date:</strong> 10 July 2026 &middot;
-          <strong>Last updated:</strong> 10 July 2026
+          <strong>Effective date:</strong> 11 July 2026 &middot; <strong>Last updated:</strong> 11
+          July 2026
         </p>
       </header>
 
@@ -105,9 +111,11 @@
       <div class="lede">
         <strong>The short version:</strong> The App does not collect, transmit, or share any
         personal information. There are no accounts, no login, no analytics, no advertising, and no
-        third-party trackers. Everything the App remembers about you stays on your device. The
-        App's only network activity is checking for app updates — a request that carries no
-        personal information (see "Third-party services").
+        third-party trackers. Everything the App remembers about you stays on your device. The App
+        has just two limited network activities, and
+        <strong>neither carries personal information or your learning data</strong>: it checks for
+        app updates, and — if the App crashes — it sends an anonymous diagnostic report so we can
+        fix the problem (see "Third-party services").
       </div>
 
       <h2>What the App stores on your device</h2>
@@ -152,8 +160,8 @@
 
       <h2>What we do NOT collect</h2>
       <p>
-        We do not collect, and the App does not transmit, any of the following (its only network
-        activity is the update check described under "Third-party services"):
+        We do not collect, and the App does not transmit, any of the following (its network activity
+        is limited to the update check and crash reports described under "Third-party services"):
       </p>
       <ul>
         <li>Your name, email address, phone number, or any contact details.</li>
@@ -161,34 +169,55 @@
         <li>
           Your device's advertising identifier, or any cross-app or cross-site tracking identifiers.
         </li>
-        <li>Analytics or usage telemetry.</li>
-        <li>Crash or diagnostic reports.</li>
+        <li>
+          Analytics or usage telemetry (we do not track what you tap, view, or how you use the App).
+        </li>
+        <li>
+          Personal information of any kind in our crash diagnostics — see "Third-party services" for
+          exactly what a crash report contains.
+        </li>
         <li>
           Contacts, photos, microphone, or camera data (the App does not request access to these).
         </li>
       </ul>
       <p>
-        The App requires <strong>no account</strong> and asks for <strong>no personal
-        information</strong> to function.
+        The App requires <strong>no account</strong> and asks for
+        <strong>no personal information</strong> to function.
       </p>
 
       <h2>Third-party services</h2>
       <p>
-        The App <strong>uses no analytics providers, advertising networks, crash-reporting tools,
-        or trackers of any kind.</strong>
+        The App
+        <strong>uses no analytics providers, advertising networks, or trackers of any kind.</strong>
+        It uses two third-party services, described below — one to deliver updates, and one for
+        crash diagnostics.
       </p>
       <p>
-        The App uses one third-party service: <strong>EAS Update</strong>, operated by Expo (650
-        Industries, Inc.), to deliver bug fixes and content corrections without requiring a full
-        app-store update. When the App launches, it may check Expo's servers for such an update over
-        an encrypted connection. That request contains only technical, non-personal information —
-        the app's version and runtime details, update channel, platform, and a randomly generated
-        update-delivery identifier that is not linked to your identity or your learning data — plus
-        the standard network metadata (such as an IP address) inherent to any internet request. None
-        of your learning data, settings, or the installation identifier described above is included.
-        Expo's handling of these requests is governed by
-        <a href="https://expo.dev/privacy">Expo's privacy policy</a>. If your device is offline, the
-        App simply skips the check and works normally.
+        <strong>EAS Update</strong>, operated by Expo (650 Industries, Inc.), delivers bug fixes and
+        content corrections without requiring a full app-store update. When the App launches, it may
+        check Expo's servers for such an update over an encrypted connection. That request contains
+        only technical, non-personal information — the app's version and runtime details, update
+        channel, platform, and a randomly generated update-delivery identifier that is not linked to
+        your identity or your learning data — plus the standard network metadata (such as an IP
+        address) inherent to any internet request. None of your learning data, settings, or the
+        installation identifier described above is included. Expo's handling of these requests is
+        governed by <a href="https://expo.dev/privacy">Expo's privacy policy</a>. If your device is
+        offline, the App simply skips the check and works normally.
+      </p>
+      <p>
+        <strong>Sentry</strong> (crash reporting), operated by Functional Software, Inc., helps us
+        find and fix bugs. If the App crashes or hits an unexpected error, it sends a diagnostic
+        report to Sentry. That report contains technical information about the failure — the error
+        message and its code-level stack trace, your device model and operating-system version, and
+        the App's version — together with the standard network metadata (such as an IP address)
+        inherent to any internet request. It does <strong>not</strong> include your name or contact
+        details, your learning progress or settings, or the on-device installation identifier
+        described above; crash reporting is configured to omit personal identifiers, and the App
+        collects no performance or usage analytics through it. Reports are sent
+        <strong>only</strong> when a crash or error occurs, over an encrypted connection (HTTPS).
+        This is the "diagnostics" / "crash data" category on the App Store and Google Play data
+        forms. Sentry's handling of this data is governed by
+        <a href="https://sentry.io/privacy/">Sentry's privacy policy</a>.
       </p>
       <p>
         Note that if you install the App through the Apple App Store or Google Play, those stores
@@ -200,11 +229,12 @@
       <h2>Children's privacy</h2>
       <p>
         The App is a language-learning tool suitable for a general audience, including younger
-        learners. Because the App <strong>collects no personal information from anyone</strong>, it
-        collects no personal information from children. We do not knowingly gather data from
-        children (or anyone) — there is simply no data collection to speak of. If we ever change
-        this, we will update this policy and, where required, add appropriate age gating and
-        parental-consent mechanisms before doing so.
+        learners. Because the App <strong>collects no personal information from anyone</strong> —
+        the only data that ever leaves the device is the anonymous, non-personal diagnostics
+        described above — it collects no personal information from children. We do not knowingly
+        gather personal information from children (or anyone). If we ever change this, we will
+        update this policy and, where required, add appropriate age gating and parental-consent
+        mechanisms before doing so.
       </p>
 
       <h2>How to delete your data</h2>
@@ -221,8 +251,8 @@
         Your data is stored within the App's private, sandboxed storage area provided by your
         device's operating system, protected by the standard security of iOS/Android. Your learning
         data is never transmitted off the device, so there is no personal data "in transit" to
-        intercept; the App's update checks (see "Third-party services") travel over encrypted
-        connections (HTTPS) and carry no personal data.
+        intercept; the App's update checks and crash reports (see "Third-party services") travel
+        over encrypted connections (HTTPS) and carry no personal data.
       </p>
 
       <h2>Changes to this policy</h2>
@@ -232,7 +262,6 @@
       </p>
       <ul>
         <li><strong>Optional cloud backup / cross-device sync</strong> of your progress.</li>
-        <li><strong>Crash reporting</strong> to help us fix bugs.</li>
         <li><strong>Advertising</strong> and/or <strong>optional paid upgrades.</strong></li>
       </ul>
       <p>
@@ -249,7 +278,6 @@
         <strong>Mina Megalaa</strong><br />
         Email: <a href="mailto:contact@remenkhemi.com">contact@remenkhemi.com</a>
       </p>
-
     </main>
   </body>
 </html>
