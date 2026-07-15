@@ -1,0 +1,4 @@
+.DS_Store
+
+# Full-resolution screenshot originals (web-sized copies live in assets/screenshots/)
+/Screenshots/

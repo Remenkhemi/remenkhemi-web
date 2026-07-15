@@ -11,21 +11,21 @@
     <style>
       :root {
         color-scheme: light dark;
-        --bg: #ffffff;
-        --fg: #1a1a1a;
-        --muted: #5b5b5b;
-        --accent: #7a5cff;
-        --rule: #e6e6e6;
-        --card: #f7f7f9;
+        --bg: #fffdf8;
+        --fg: #1f1b16;
+        --muted: #6b6154;
+        --accent: #9a7400;
+        --rule: #e8e0d0;
+        --card: #f7f2e8;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg: #14141a;
-          --fg: #ececf1;
-          --muted: #a2a2ad;
-          --accent: #a48cff;
-          --rule: #2a2a34;
-          --card: #1d1d26;
+          --bg: #14110d;
+          --fg: #ede8df;
+          --muted: #a89e8e;
+          --accent: #e0b33a;
+          --rule: #2c261d;
+          --card: #1d1811;
         }
       }
       * {
@@ -66,6 +66,16 @@
       a {
         color: var(--accent);
       }
+      .back {
+        display: inline-block;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.95rem;
+        margin: 0 0 1.25rem;
+      }
+      .back:hover {
+        color: var(--accent);
+      }
       ul {
         padding-left: 1.25rem;
       }
@@ -77,6 +87,7 @@
   <body>
     <main>
       <header>
+        <a class="back" href="/">&larr; Remenkhemi</a>
         <h1>Terms of Service</h1>
         <p class="meta">
           <strong>Effective date:</strong> 10 July 2026 &middot;
